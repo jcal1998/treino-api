@@ -1,0 +1,82 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background-color: black;
+}
+
+#container {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: aliceblue;
+}
+
+#content {
+  min-width: 250px;
+  min-height: 300px;
+  background-color: blanchedalmond;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+form {
+  width: 100%;
+  margin-top: 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
+}
+
+label {
+  height: 20px;
+  width: 100%;
+}
+
+input {
+  width: 100%;
+  height: 20px;
+  border-radius: 3px;
+}
+
+button {
+  width: 150px;
+  cursor: pointer;
+  padding: 0.5em 2em;
+}
+
+#uploadedlabel {
+  min-height: 100px;
+  min-width: 100px;
+  max-height: 250px;
+  max-width: 250px;
+}
+
+#uploaded {
+  background-image: url('./assets/photo.svg');
+  background-position: center;
+  background-repeat: no-repeat;
+  border-radius: 5px;
+  border: 0.5px dashed;
+  min-height: 100px;
+  min-width: 100px;
+  max-height: 250px;
+  max-width: 250px;
+}
+
+#inn {
+  margin: 10 auto;
+  display: flex;
+  flex-wrap: wrap;
+}
+

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Teste</title>
+    <link rel="stylesheet" type="text/css" href="/static/style.css" />
+    <script type="text/javascript" src="/static/script.js"></script>
+  </head>
+
+  <body>
+    <div id="container">
+      <div id="content">
+        <h1>Formulario</h1>
+        <form action="http://localhost:3000/api/add" method="post">
+          <label>
+            <input placeholder="Nome" required id="name" name="name" />
+          </label>
+          <label>
+            <input
+              placeholder="Telefone"
+              type="number"
+              required
+              id="phone"
+              name="phone"
+            />
+          </label>
+          <label>
+            <input
+              placeholder="E-mail"
+              type="email"
+              required
+              id="mail"
+              name="mail"
+            />
+          </label>
+          <input id="fileupload" type="file" name="fileupload" onchange="onChange(event)" />
+          <img id="uploaded" src="#" alt="">
+          <div id="buttondiv">
+            <button type="button" onclick="submitFormAjax(event)" id="button">
+              Ajax
+            </button>
+            <button type="submit" id="button">NonAjax</button>
+          </div>
+        </form>
+        <h1 id="inn"></h1>
+      </div>
+    </div>
+  </body>
+</html>
